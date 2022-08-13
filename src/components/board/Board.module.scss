@@ -10,7 +10,7 @@
   justify-content: space-between;
   row-gap: $board-gap;
   column-gap: $board-gap;
-  flex-grow: 1;
+  height: 60vh;
   position: relative;
   padding: $board-gap;
   border: $board-border solid $firm-brown;
@@ -26,7 +26,7 @@
     aspect-ratio: 1 / 1;
     border-radius: calc($board-border-radius / $cells-per-row);
     background-color: $firm-brown;
-    font-size: 3vw;
+    font-size: 5vh;
     font-weight: 600;
 
     &.v- {
