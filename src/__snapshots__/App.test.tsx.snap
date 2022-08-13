@@ -44,36 +44,42 @@ Object {
           class="boardCell "
         />
         <div
+          class="boardCell "
+        />
+        <div
+          class="boardCell "
+        />
+        <div
+          class="boardCell "
+        />
+        <div
+          class="boardCell "
+        />
+        <div
+          class="boardCell "
+        />
+        <div
+          class="boardCell "
+        />
+        <div
+          class="boardCell "
+        />
+        <div
+          class="boardCell "
+        />
+        <div
+          class="boardCell "
+        />
+        <div
           class="boardCell v-2"
         >
           2
         </div>
         <div
-          class="boardCell "
-        />
-        <div
-          class="boardCell "
-        />
-        <div
-          class="boardCell "
-        />
-        <div
-          class="boardCell "
-        />
-        <div
-          class="boardCell "
-        />
-        <div
-          class="boardCell "
-        />
-        <div
           class="boardCell v-2"
         >
           2
         </div>
-        <div
-          class="boardCell "
-        />
       </div>
     </div>
   </body>,
@@ -117,36 +123,42 @@ Object {
         class="boardCell "
       />
       <div
+        class="boardCell "
+      />
+      <div
+        class="boardCell "
+      />
+      <div
+        class="boardCell "
+      />
+      <div
+        class="boardCell "
+      />
+      <div
+        class="boardCell "
+      />
+      <div
+        class="boardCell "
+      />
+      <div
+        class="boardCell "
+      />
+      <div
+        class="boardCell "
+      />
+      <div
+        class="boardCell "
+      />
+      <div
         class="boardCell v-2"
       >
         2
       </div>
       <div
-        class="boardCell "
-      />
-      <div
-        class="boardCell "
-      />
-      <div
-        class="boardCell "
-      />
-      <div
-        class="boardCell "
-      />
-      <div
-        class="boardCell "
-      />
-      <div
-        class="boardCell "
-      />
-      <div
         class="boardCell v-2"
       >
         2
       </div>
-      <div
-        class="boardCell "
-      />
     </div>
   </div>,
   "debug": [Function],
