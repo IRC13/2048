@@ -1,0 +1,3 @@
+@mixin firm-gradient($start-color, $end-color) {
+  background: linear-gradient(135deg, $start-color, $end-color);
+}

@@ -1,0 +1,53 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.overlay {
+  $lighten-percentage: 15%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+
+  button {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    padding: 1vw 2vw;
+    border: 0;
+    border-radius: 1vw;
+    outline: none;
+    transition: background 0.3s linear;
+    @include firm-gradient($firm-light-red, $firm-dark-red);
+
+    &:hover {
+      @include firm-gradient(
+        lighten($firm-light-red, $lighten-percentage),
+        lighten($firm-dark-red, $lighten-percentage)
+      );
+    }
+  }
+
+  &.win {
+    button {
+      @include firm-gradient($firm-light-green, $firm-dark-green);
+
+      &:hover {
+        @include firm-gradient(
+          lighten($firm-light-green, $lighten-percentage),
+          lighten($firm-dark-green, $lighten-percentage)
+        );
+      }
+    }
+  }
+}

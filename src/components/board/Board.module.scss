@@ -1,0 +1,45 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.board {
+  $cells-per-row: 4;
+
+  $board-gap: 1vw;
+  $board-border-radius: 1.5vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: $board-gap;
+  column-gap: $board-gap;
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  padding: $board-gap;
+  border: 1.2vw solid $firm-brown;
+  border-radius: $board-border-radius;
+  @include firm-gradient(#fff, #eee);
+
+  &Cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(25% - $board-gap * ($cells-per-row - 1) / $cells-per-row);
+    aspect-ratio: 1 / 1;
+    border-radius: calc($board-border-radius / $cells-per-row);
+    background-color: $firm-brown;
+    font-size: 3vw;
+    font-weight: 600;
+
+    &.v- {
+      $i: 2;
+      @while $i <= 2048 {
+        $start-color: map-get($cell-colors, $i);
+        &#{$i} {
+          @include firm-gradient($start-color, darken($start-color, 10%));
+        }
+        $i: $i * 2;
+      }
+    }
+  }
+}
