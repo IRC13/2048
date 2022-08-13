@@ -12,10 +12,11 @@
   color: #fff;
   font-weight: 600;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: -$board-border;
+  left: -$board-border;
+  bottom: -$board-border;
+  right: -$board-border;
+  border-radius: $board-border-radius;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
 

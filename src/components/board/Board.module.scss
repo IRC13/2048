@@ -3,21 +3,19 @@
 
 .board {
   $cells-per-row: 4;
-
   $board-gap: 1vw;
-  $board-border-radius: 1.5vw;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: $board-gap;
   column-gap: $board-gap;
+  flex-grow: 1;
   position: relative;
-  width: 40vw;
-  height: 40vw;
   padding: $board-gap;
-  border: 1.2vw solid $firm-brown;
+  border: $board-border solid $firm-brown;
   border-radius: $board-border-radius;
+  aspect-ratio: 1 / 1;
   @include firm-gradient(#fff, #eee);
 
   &Cell {

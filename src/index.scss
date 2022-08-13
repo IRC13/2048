@@ -5,14 +5,16 @@
   font-family: sans-serif;
 }
 
-body {
+header {
+  text-align: center;
+}
+
+#root {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-header {
-  text-align: center;
+  row-gap: 5vw;
+  height: 100vh;
   padding: 5vw 0;
 }
