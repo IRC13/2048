@@ -8,6 +8,7 @@ import {
   getInitialCells,
   getRearrangedCellsX,
   getRearrangedCellsY,
+  isMergeAvailable,
   updateCellValuesX,
   updateCellValuesY
 } from '../../helpers/board.helper';
@@ -101,7 +102,7 @@ const Board: FC<Props> = ({ score, updateScore }) => {
     if (cells.includes(MAX_CELL_VALUE)) {
       setIsEnd(true);
       setIsWin(true);
-    } else if (cells.every(c => c > 0)) {
+    } else if (cells.every(c => c > 0) && !isMergeAvailable(cells)) {
       setIsEnd(true);
     }
   }, [cells, updateScore]);

@@ -127,3 +127,12 @@ export const updateCellValuesY = (cells: number[], totalCells = TOTAL_CELLS, row
 
   return addedScore;
 };
+
+export const isMergeAvailable = (cells: number[], rowLength = ROW_LENGTH): boolean => {
+  return cells.some((cell, i, cellsArr) => {
+    const nextIdx = i + 1;
+    const isLastInRow = nextIdx % rowLength === 0;
+
+    return cell === cellsArr[i + rowLength] && (isLastInRow || cell === cellsArr[nextIdx]);
+  });
+};
